@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Proyectos</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylo2.css">
+
+</head>
+
+<body>
+
+    <div id="home-view" class="home-container">
+
+        <div class="home-header">
+            <h1 class="home-title">Mis Proyectos</h1>
+            <button id="logout-btn" class="logout-btn">Cerrar sesionn</button>
+        </div>
+
+        <button id="addProjectBtn" class="btn add-project-btn">+ Agregar Proyecto</button>
+
+        <div id="projectsGrid" class="projects-grid">
+         
+        </div>
+
+        <!-- Modal crear o editar proyecto -->
+        <div id="projectModal" class="modal">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h2 id="modalTitle">Agregar Proyecto</h2>
+                    <button id="closeModal" class="close-modal">&times;</button>
+                </div>
+
+                <form id="projectForm">
+                    <div style="padding: 30px;">
+
+                        <div class="form-group">
+                            <label for="title">Titulo </label>
+                            <input type="text" id="title" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Descripcion *</label>
+                            <textarea id="description" required rows="4"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="technologiesInput">Tecnologi­as</label>
+                            <input type="text" id="technologiesInput">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="repository">Repositorio (URL)</label>
+                            <input type="url" id="repository">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="imagesInput">Imagenes (URLs)</label>
+                            <input type="text" id="imagesInput">
+                        </div>
+
+                        <div class="modal-actions">
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                            <button type="button" id="cancelBtn" class="btn btn-secondary">Cancelar</button>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/projectos.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
