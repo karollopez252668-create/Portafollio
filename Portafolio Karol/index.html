@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Portafolio</a>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Inicio</a>
+                <a href="#about" class="nav-link">Sobre Mí</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#projects" class="nav-link">Proyectos</a>
+                <a href="#contact" class="nav-link">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div>
+            <h1>Hola, soy Karito</h1>
+            <h2>Desarrolladora Full Stack</h2>
+            <p>Desarrolladora en formación, curiosa por naturaleza y fan del trabajo en equipo. Construyendo
+                experiencias digitales.</p>
+                
+            <a href="#projects" class="btn">Ver Proyectos</a>
+            <a href="#contact" class="btn">Contacto</a>
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="about">
+        <h2 class="section-title" id="">Sobre Mí</h2>
+        <div class="about-content">
+
+            <p>Soy estudiante de Ingeniería de Software y me encanta todo lo relacionado con programar, diseñar y crear
+                cosas cool para la web. Siempre ando aprendiendo algo nuevo porque me gusta seguir mejorando y probar
+                tecnologías diferentes.</p>
+            <p>Ahorita estoy metida en el desarrollo full-stack, moviéndole tanto al frontend como al backend. Me gusta
+                trabajar en equipo, compartir ideas y hacer las cosas lo más limpias y funcionales posible.</p>
+
+        </div>
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number" id="projectCount">0</div>
+                <p>Proyectos</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5000+</div>
+                <p>Líneas de Código</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">50+</div>
+                <p>Tazas de Café</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="skills">
+        <h2 class="section-title">Tecnologías</h2>
+        <p style="text-align: center; color: #888; margin-bottom: 2rem;">Herramientas y tecnologías que uso.</p>
+
+        <div class="skills-grid">
+            <div class="tech-item">
+                <div class="tech-icon html">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="tech-info">
+                    <div class="tech-name">HTML</div>
+                    <div class="tech-description">Lenguaje de marcado</div>
+                </div>
+            </div>
+
+            <div class="tech-item">
+                <div class="tech-icon css">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="tech-info">
+                    <div class="tech-name">CSS</div>
+                    <div class="tech-description">Lenguaje de estilado</div>
+                </div>
+            </div>
+
+            <div class="tech-item">
+                <div class="tech-icon js">
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="tech-info">
+                    <div class="tech-name">JavaScript</div>
+                    <div class="tech-description">Lenguaje de programación</div>
+                </div>
+            </div>
+
+            <div class="tech-item">
+                <div class="tech-icon tailwind">
+                    <i class="fas fa-wind"></i>
+                </div>
+                <div class="tech-info">
+                    <div class="tech-name">Tailwind</div>
+                    <div class="tech-description">Librería de utilidades</div>
+                </div>
+            </div>
+
+            <div class="tech-item">
+                <div class="tech-icon node">
+                    <i class="fab fa-node-js"></i>
+                </div>
+                <div class="tech-info">
+                    <div class="tech-name">NodeJS</div>
+                    <div class="tech-description">Entorno de ejecución</div>
+                </div>
+            </div>
+
+            <div class="tech-item">
+                <div class="tech-icon git">
+                    <i class="fab fa-git-alt"></i>
+                </div>
+                <div class="tech-info">
+                    <div class="tech-name">Git</div>
+                    <div class="tech-description">Control de versiones</div>
+                </div>
+            </div>
+
+            <div class="tech-item">
+                <div class="tech-icon github">
+                    <i class="fab fa-github"></i>
+                </div>
+                <div class="tech-info">
+                    <div class="tech-name">GitHub</div>
+                    <div class="tech-description">Alojamiento de código</div>
+                </div>
+            </div>
+
+            <div class="tech-item">
+                <div class="tech-icon mysql">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="tech-info">
+                    <div class="tech-name">MySQL</div>
+                    <div class="tech-description">Base de datos relacional</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="projects">
+        <h2 class="section-title">Proyectos</h2>
+        <div id="projectsGrid" class="projects-grid">
+            <div class="loading">Cargando proyectos...</div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-card">
+            <h3>¿Tienes alguna idea o proyecto?</h3>
+            <p>Estoy abierta a nuevas ideas y personas dulces. Si quieres crear algo juntos, será un placer.</p>
+            <div class="contact-info">
+                <a href="karol.lopez252668@potros.itson.edu.mx" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>karol.lopez252668@potros.itson.edu.mx</span>
+                </a>
+                <a href="https://github.com/karollopez252668-create" target="_blank" class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>karollopez252668</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/karollopez252668-create" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <p style="
+            margin-top: 1rem; 
+            color: #ffffff;">
+            © 2025 Mi Portafolio
+        </p>
+    </footer>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
